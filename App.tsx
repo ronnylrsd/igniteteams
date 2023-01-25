@@ -7,8 +7,8 @@ import { ThemeProvider } from "styled-components";
 
 import theme from "./src/theme";
 
+import { Loading } from "@components/Loading";
 import { Groups } from "@screens/Groups";
-import { ActivityIndicator } from "react-native";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {fontsLoaded ? <Groups /> : <ActivityIndicator />}
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   );
 }
