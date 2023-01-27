@@ -4,15 +4,12 @@ import { FlatList } from "react-native";
 import { GroupCard } from "@components/GroupCard";
 import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
+import { ListEmpty } from "@components/ListEmpty";
 
 import { Container } from "./styles";
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>([
-    "Nome da Turma",
-    "Amigos",
-    "Família",
-  ]);
+  const [groups, setGroups] = useState<string[]>([]);
 
   return (
     <Container>
@@ -27,6 +24,10 @@ export function Groups() {
             title={item}
             onPress={() => console.log("Clicou em " + item)}
           />
+        )}
+        contentContainerStyle={groups.length === 0 ? { flex: 1 } : {}}
+        ListEmptyComponent={() => (
+          <ListEmpty message="Que tal cadastrar a primeira turma?" />
         )}
       />
     </Container>
