@@ -5,14 +5,27 @@ import { Filter } from "@components/Filter";
 import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
 import { Input } from "@components/Input";
+import { ListEmpty } from "@components/ListEmpty";
 import { PlayerCard } from "@components/PlayerCard";
+import { Button } from "@components/Button";
+
 import { Container, Form, HeaderList, NumbersOfPlayers } from "./styles";
 
 import { useState } from "react";
 
 export function Players() {
   const [team, setTeam] = useState("Time A");
-  const [players, setPlayers] = useState(["Ronny", "Lucas"]);
+  const [players, setPlayers] = useState([
+    "João",
+    "Maria",
+    "José",
+    "Ana",
+    "Lucas",
+    "Marcos",
+    "Davi",
+    "Djalma",
+    "Pedro",
+  ]);
 
   return (
     <Container>
@@ -48,7 +61,20 @@ export function Players() {
         renderItem={({ item }) => (
           <PlayerCard name={item} onRemove={() => {}} />
         )}
+        ListEmptyComponent={() => (
+          <ListEmpty message="Não há pessoas nesse time" />
+        )}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={
+          players.length === 0
+            ? { flex: 1 }
+            : {
+                paddingBottom: 100,
+              }
+        }
       />
+
+      <Button title="Remover Turmas" type="SECONDARY" />
     </Container>
   );
 }
