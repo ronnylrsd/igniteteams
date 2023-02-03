@@ -1,5 +1,6 @@
 import { FlatList } from "react-native";
 
+import { Button } from "@components/Button";
 import { ButtonIcon } from "@components/ButtonIcon";
 import { Filter } from "@components/Filter";
 import { Header } from "@components/Header";
@@ -7,7 +8,6 @@ import { Highlight } from "@components/Highlight";
 import { Input } from "@components/Input";
 import { ListEmpty } from "@components/ListEmpty";
 import { PlayerCard } from "@components/PlayerCard";
-import { Button } from "@components/Button";
 
 import { Container, Form, HeaderList, NumberOfPlayers } from "./styles";
 
@@ -15,17 +15,7 @@ import { useState } from "react";
 
 export function Players() {
   const [team, setTeam] = useState("Time A");
-  const [players, setPlayers] = useState([
-    "João",
-    "Maria",
-    "José",
-    "Ana",
-    "Lucas",
-    "Marcos",
-    "Davi",
-    "Djalma",
-    "Pedro",
-  ]);
+  const [players, setPlayers] = useState([]);
 
   return (
     <Container>
