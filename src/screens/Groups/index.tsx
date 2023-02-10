@@ -28,6 +28,10 @@ export function Groups() {
     }
   }
 
+  function handleOpenGroup(group: string) {
+    navigation.navigate("players", { group });
+  }
+
   useFocusEffect(useCallback(() => {
     // o que executar (quando ele vai executar, sempre depois da renderização do componente)
     console.log("Executou o useFocusEffect");
@@ -45,7 +49,7 @@ export function Groups() {
         renderItem={({ item }) => (
           <GroupCard
             title={item}
-            onPress={() => console.log("Clicou em " + item)}
+            onPress={() => handleOpenGroup(item)}
           />
         )}
         contentContainerStyle={groups.length === 0 ? { flex: 1 } : {}}
