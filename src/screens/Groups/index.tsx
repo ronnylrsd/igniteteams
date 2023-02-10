@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { FlatList } from "react-native";
 
 import { Button } from "@components/Button";
@@ -7,7 +7,8 @@ import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
 import { ListEmpty } from "@components/ListEmpty";
 
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
+import { groupsGetAll } from "@storage/group/groupsGetAll";
 import { Container } from "./styles";
 
 export function Groups() {
@@ -17,6 +18,21 @@ export function Groups() {
   function handleNewGroup() {
     navigation.navigate("newgroups");
   }
+
+  async function fetchGroups() {
+    try {
+      const data = await groupsGetAll();
+      setGroups(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useFocusEffect(useCallback(() => {
+    // o que executar (quando ele vai executar, sempre depois da renderização do componente)
+    console.log("Executou o useFocusEffect");
+    fetchGroups();
+  }, [])); //quantas vezes ele vai executar
 
   return (
     <Container>
