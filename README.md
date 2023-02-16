@@ -1,6 +1,6 @@
 <h1 align="center">igniteteams</h1>
 
-<h3 align="center">Projeto Desafio 1</h3>
+<h3 align="center">Projeto 3</h3>
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
