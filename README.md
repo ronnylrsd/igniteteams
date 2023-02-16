@@ -24,11 +24,12 @@
 
 ## 💻 Projeto
 
-Projeto desafio para aplicar os fundamentos do React-Native realizado no Curso de React da RocketSeat e buscar algumas funcionalidades individualmente. Nesse desafio, eu desenvolvi uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
-- Adicionar uma nova tarefa
-- Marcar e desmarcar uma tarefa como concluída
-- Remover uma tarefa da listagem
-- Mostrar o progresso de conclusão das tarefas
+Projeto desafio para aplicar os fundamentos do React-Native realizado no Curso de React da RocketSeat e buscar algumas funcionalidades individualmente. Nesse projeto, eu desenvolvi uma aplicação de turmas e separação dos times, que contém as seguintes funcionalidades:
+- Adicionar uma nova turma
+- Remover uma turma
+- Adicionar jogadores
+- Remover jogadores
+- Filtrar jogadores entre times: A e B
 
 ## ✨ Tecnologias
 
