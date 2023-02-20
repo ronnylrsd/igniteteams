@@ -76,4 +76,4 @@ Ferramenta para celular tanto iOS quanto android:
 
 ---
 
-Projeto Desafio 1 desenvolvido a partir de aulas do Curso de React Native da RocketSeat
+Projeto 3 desenvolvido a partir de aulas do Curso de React Native da RocketSeat
