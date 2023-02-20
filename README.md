@@ -12,19 +12,18 @@
 <br>
 
  ## 📱 Funcionalidades Parte 1
- <img src="https://user-images.githubusercontent.com/63603061/219654778-065f647a-e5e7-4f9f-a591-6783e2ebb618.png"
- width=30%>
-<img src=""
- width=30%>
+ <img src="https://user-images.githubusercontent.com/63603061/220086030-3d430745-53d4-4757-90a7-081020107df5.png"
+ width=70%>
 ## 📱 Funcionalidades Parte 2
-<img src=""
- width=30%>
-<img src=""
- width=30%>
+<img src="https://user-images.githubusercontent.com/63603061/220087226-99d348be-2f54-48bc-9d65-9274c2d22acc.png"
+ width=70%>
+## 📱 Funcionalidades Parte 3
+<img src="https://user-images.githubusercontent.com/63603061/220087638-a41d46b5-a66d-43db-bd0a-62ad0b8d8679.png"
+ width=70%>
 
 ## 💻 Projeto
 
-Projeto desafio para aplicar os fundamentos do React-Native realizado no Curso de React da RocketSeat e buscar algumas funcionalidades individualmente. Nesse projeto, eu desenvolvi uma aplicação de turmas e separação dos times, que contém as seguintes funcionalidades:
+Projeto desafio para aplicar os fundamentos do React-Native realizado no Curso de React da RocketSeat. Nesse projeto, eu desenvolvi uma aplicação de turmas e separação dos times, que contém as seguintes funcionalidades:
 - Adicionar uma nova turma
 - Remover uma turma
 - Adicionar jogadores
