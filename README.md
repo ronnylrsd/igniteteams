@@ -70,7 +70,7 @@ Ferramenta para celular tanto iOS quanto android:
 ## 👷 COLABORADOR
 
 #### Nome: Ronny Lima Ribeiro da Silva
-- LinkedIn: [Ronny Ribeiro](https://www.linkedin.com/in/ronny-lima-ribeiro-da-silva/)
+- LinkedIn: [Ronny Ribeiro](https://www.linkedin.com/in/ronnylrsd/)
 - GitHub: [ronnylrsd](https://github.com/ronnylrsd)
 
 
